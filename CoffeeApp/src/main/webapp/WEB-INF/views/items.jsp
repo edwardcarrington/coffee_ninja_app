@@ -53,8 +53,8 @@
 					     This actually calls the getters behind the scenes. --%>
 					<td>${item.name}</td><td>${item.description}</td><td>${item.price}</td>
 					<td>
-						<a href="/items/${ item.id }/update" class="btn btn-info">Add To Cart</a>
-						<a href="/items/${ item.id }/delete" class="btn btn-light">Delete</a>
+						<a href= "/index" <%--"/items/${ item.id }/update"--%> class="btn btn-info">Add To Cart</a>
+						<a href= "/index" <%--"/items/${ item.id }/delete"--%> class="btn btn-light">Delete</a>
 					</td>
 				</tr>
 			</c:forEach>
