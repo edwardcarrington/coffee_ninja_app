@@ -21,7 +21,7 @@
 
 	<div class="row">
         <div class="col-md-6">
-            <form action="/admin/{id}/update" method="post" id="fileForm" role="form">
+            <form action="/admin/${id}/update" method="post" id="fileForm" role="form">
             <fieldset><legend class="text-center"> Enter updated information of item below. <span class="req"></span></legend>
 
             <div class="form-group"> 	 
@@ -38,7 +38,7 @@
 
             <div class="form-group">
                 <label for="quantity"><span class="req"></span> New Quantity: </label> 
-                    <input class="form-control" type="text" name="quantity" id = "quantity" value="${items.quantity}" placeholder="${items.quantity}" />   
+                    <input class="form-control" type="number" name="quantity" id = "quantity" value="${items.quantity}" placeholder="${items.quantity}" />   
                         <div class="status" id="status"></div>
             </div>
 
@@ -52,6 +52,7 @@
                 <?php //$date_entered = date('m/d/Y H:i:s'); ?>
                 <input type="hidden" value="<?php //echo $date_entered; ?>" name="dateregistered">
                 <input type="hidden" value="0" name="activate" />
+                <input type="hidden" value="${ items.id }" name="${id}" />
                 <hr>
                 
             </div>

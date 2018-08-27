@@ -113,7 +113,7 @@ public class CoffeeController {
 	@RequestMapping("/admin/{id}/update") // this method goes to update.jsp
 	public ModelAndView showEditForm(@PathVariable("id") int id) {
 		ModelAndView mav = new ModelAndView("update");
-		mav.addObject("Item", itemDao.findById(id));
+		mav.addObject("items", itemDao.findById(id));
 		mav.addObject("title", "Edit Item");
 		return mav;
 	}

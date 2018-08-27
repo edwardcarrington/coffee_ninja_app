@@ -15,14 +15,14 @@ public class Item {
 	int id;
 	String name;
 	String description;
-	String quantity;
+	int quantity;
 	double price;
 
 	// always include a no arg constructor
 	public Item() {
 	}
 
-	public Item(int id, String name, String description, String quantity, double price) {
+	public Item(int id, String name, String description, int quantity, double price) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -31,13 +31,13 @@ public class Item {
 		this.price = price;
 	}
 
-	public Item(String name, String description, String quantity, double price) {
-		super();
-		this.name = name;
-		this.description = description;
-		this.quantity = quantity;
-		this.price = price;
-	}
+//	public Item(String name, String description, String quantity, double price) {
+//		super();
+//		this.name = name;
+//		this.description = description;
+//		this.quantity = quantity;
+//		this.price = price;
+//	}
 
 	public int getId() {
 		return id;
@@ -63,11 +63,11 @@ public class Item {
 		this.description = description;
 	}
 
-	public String getQuantity() {
+	public int getQuantity() {
 		return quantity;
 	}
 
-	public void setQuantity(String quantity) {
+	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
 
